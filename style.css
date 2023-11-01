@@ -1,0 +1,274 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  /* overflow: auto; */
+}
+body
+{
+  background: url(/equalizer-153212.svg);
+  /* background: url(/piano-ga5b11e460_1920.jpg); */
+  width: 100%;
+}
+html {
+  height: auto;
+}
+#right-nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 10%;
+}
+#navbar {
+  display: flex;
+  background: rgba(160, 58, 255, 0.418);
+  /* background: none; */
+  height: 60px;
+  border-radius: 30px;
+  margin-top: 4px;
+  position: sticky;
+  top: 0;
+  backdrop-filter: blur(5px);
+}
+.container {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  width: 80%;
+}
+.container ul {
+  text-decoration: none;
+  list-style: none;
+  padding: 7px;
+  margin: 4px;
+  font-size: 1.6rem;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  font-weight: 600;
+  /* border: 2px solid black; */
+}
+
+.container ul li a {
+  text-decoration: none;
+  color: rgba(106, 84, 230, 0.76);
+}
+.container ul li a:hover,
+.container ul li a.active {
+  /* color: aliceblue; */
+  color: #c59cfb;
+  text-decoration: underline;
+}
+#signup {
+  display: flex;
+  width: 10%;
+  justify-content: center;
+  margin: 5px 0;
+}
+#logo {
+  width: 60px;
+  /* filter: invert(100); */
+  transition: 0.3s;
+}
+#logo:hover 
+{
+  transform: scale(1.1);
+  cursor: pointer;
+}
+.btn 
+{
+  display: flex;
+  text-align: center;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  /* margin: 5px; */
+  margin: 5px 30px 9px -20px;
+  padding: 7px;
+  border-radius: 25px;
+  font-size: 1rem;
+  cursor: pointer;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 600;
+  border: 2px solid black;
+  border: 2px solid #3a3a3a;
+  outline: none;
+  background: #794ce0;
+  color: rgb(0, 0, 0);
+  color: #c59cfb;
+}
+.btn:hover 
+{
+  color: rgb(0, 0, 0);
+  border: 2px solid #b392df;
+  background: #a928d4;
+  color: #b392df;
+}
+.section 
+{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 3vh;
+}
+#headtxt 
+{
+  /* color: rgb(137 56 255); */
+  /* color: rgb(136 76 255); */
+  color: rgb(145 0 255);
+  font-size: 40px;
+  font-weight: 400;
+  /* font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif; */
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+}
+#headmain 
+{
+  font-size: 32px;
+  /* color: #9471ff; */
+  color: rgb(137 56 255);
+}
+.beatscontainer {
+  display: grid;
+  grid-template-rows: repeat(3, 160px);
+  grid-template-columns: repeat(4, 160px);
+  grid-gap: 7px;
+  justify-content: center;
+  /* align-items: center; */
+  text-align: center;
+  /* align-content: center; */
+  margin-top: 10px;
+  /* default height is 84% */
+  height: 86vh;
+}
+.items 
+{
+  border: 2px solid black;
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  transition: all 0.3s;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+    Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-size: 1.3rem;
+  cursor: cell;
+  border-radius: 12px;
+  /* background: #ff8080; */
+  background: linear-gradient(to top left, #3333ff 0%, rgb(189 57 255) 100%);
+  color: white;
+}
+.items:hover 
+{
+  /* background: indianred; */
+  /* background: linear-gradient(to top left, #6600ff 0%, #bbb 100%); */
+  background: linear-gradient(to top right, #3333ff 0%, #4906ad 100%);
+}
+.footcontainer 
+{
+  margin-top: 23px;
+  /* border: 2px solid black; */
+  border-top: 1px solid black;
+  background: linear-gradient(to top left, #794ce0 0%, #cc33ff 100%);
+  padding: 12px;
+}
+#footer 
+{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.2rem;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+@media screen and (min-width:900px) and (max-width:1240px)
+{
+    .beatscontainer
+    {
+      margin-top: 33px;
+    }
+}
+@media screen and (max-width: 900px) 
+{
+  #right-nav
+  {
+    visibility: visible;
+    width: 100%;
+    position: sticky;
+    top: 0;
+    overflow: hidden;
+  }
+  .container
+  {
+    width: 0%;
+  }
+  #signup 
+  {
+    width: 0%;
+  }
+  #navbar {
+    /* display: none; */
+    visibility: hidden;
+    overflow: hidden;
+  }
+  #logo
+  {
+    width: 80px;
+  }
+  #logo:hover {
+    transform: none;
+  }
+  #headtxt {
+    color: rgb(145 0 255);
+  }
+  .beatscontainer {
+    margin-top: 25px;
+    grid-template-rows: repeat(4, 25vw);
+    grid-template-columns: repeat(3, 25vw);
+    grid-gap: 10px;
+    font-size: 1.3vw;
+    flex-wrap: wrap;
+    overflow: auto;
+    height: 100%;
+  }
+}
+@media screen and (max-width: 440px) 
+{
+  .beatscontainer
+  {
+    height: 70vh;
+    margin-top: 40px;
+  }
+  
+  #headmain {
+    font-size: 28px;
+  }
+  #footer {
+    font-size: 12px;
+  }
+  #navbar {
+    /* display: none; */
+    visibility: hidden;
+    overflow: hidden;
+  }
+  #logo
+  {
+    width: 80px;
+  }
+}
+@media screen and (max-width: 300px) 
+{
+  .beatscontainer {
+    grid-template-rows: repeat(4, 28vw);
+    grid-template-columns: repeat(3, 28vw);
+    height: 100%;
+  }
+}
